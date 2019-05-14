@@ -6,7 +6,7 @@ export class TimeMarker {
     private firstKey: string;
     private callback: callbackType;
 
-    constructor(sequence: string[], callback: callbackType, options: optionsType) {
+    constructor(sequence: string[], callback: callbackType, options?: optionsType) {
         if (!Array.isArray(sequence) || sequence.length < 1) {
             throw Error('sequence must be an array');
         }
